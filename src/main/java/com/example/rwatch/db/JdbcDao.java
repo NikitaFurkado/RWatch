@@ -9,9 +9,9 @@ public class JdbcDao {
 
     Connection connection;
 
-    private static final String DbUrl = "jdbc:mysql://sql7.freemysqlhosting.net:3306/sql7607943?useSSL=false";
-    private static final String DbUser = "sql7607943";
-    private static final String DbPassword = "Fxb6J8puBV";
+    private static final String DbUrl = "jdbc:mysql://localhost:3306/mydatabase?useSSL=false";
+    private static final String DbUser = "dbuser";
+    private static final String DbPassword = "password";
     private static final String INSERT_QUERY = "INSERT INTO person(fisrtname, surename, lastname, birthday," +
             "phonenumber, serialpas, numpas, regfrom, regto, patfrom, patto, city) " +
             "VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
