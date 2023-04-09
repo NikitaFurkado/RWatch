@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="364.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rwatch.controllers.ChangePersonController">
+   <children>
+      <GridPane layoutX="21.0" prefHeight="322.0" prefWidth="557.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="10.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="10.0" prefWidth="170.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="121.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="93.0" minWidth="10.0" prefWidth="42.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.0" minWidth="10.0" prefWidth="105.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Имя:" />
+            <Label fx:id="fNameL" text="Label" GridPane.columnIndex="1" />
+            <Label text="Отчество:" GridPane.rowIndex="1" />
+            <Label fx:id="sNameL" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Фамилия:" GridPane.rowIndex="2" />
+            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Дата рождения:" GridPane.rowIndex="3" />
+            <Label fx:id="bDayL" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Номер телефона:" GridPane.rowIndex="4" />
+            <Label text="Паспортные данные:" GridPane.columnIndex="2" />
+            <Label text="Серия:" GridPane.columnIndex="3" />
+            <Label fx:id="serialL" text="Label" GridPane.columnIndex="4" />
+            <Label text="Номер:" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="numL" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Label text="Город:" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label fx:id="cityL" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label text="Данные регистрации:" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label text="От:" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label text="До:" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label text="Регистрация патента:" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label text="От:" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <Label text="До:" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <TextField fx:id="pNumF" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <DatePicker fx:id="regFrom" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <DatePicker fx:id="regTo" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <DatePicker fx:id="patFrom" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <DatePicker fx:id="patTo" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+      <Button layoutX="11.0" layoutY="328.0" mnemonicParsing="false" onAction="#btnSave" text="Сохранить" />
+      <Button layoutX="111.0" layoutY="328.0" mnemonicParsing="false" onAction="#btnCancel" text="Отмена" />
+   </children>
+</AnchorPane>
